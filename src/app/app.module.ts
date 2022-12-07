@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { ViewEmployeeComponent } from './view-employee/view-employee.component';
 
 const myRoute:Routes=[
 
@@ -15,7 +16,8 @@ const myRoute:Routes=[
   declarations: [
     AppComponent,
     AddEmployeeComponent,
-    NavBarComponent
+    NavBarComponent,
+    ViewEmployeeComponent
   ],
   imports: [
     BrowserModule,
