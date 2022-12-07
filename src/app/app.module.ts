@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AddEmployeeComponent } from './add-employee/add-employee.component';
 
 const myRoute:Routes=[
 
@@ -11,7 +12,8 @@ const myRoute:Routes=[
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AddEmployeeComponent
   ],
   imports: [
     BrowserModule,
