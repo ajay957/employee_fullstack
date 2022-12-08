@@ -1,0 +1,44 @@
+<app-nav-bar></app-nav-bar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-4">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Employee Code</label>
+                    <input name="emp_code" [(ngModel)]="emp_code" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                    <button (click)="readValue()" class="btn btn-success">Search</button>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row mt-4" *ngFor="let i of searchData">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                        <label for="" class="form-label">Employee Name</label>
+                        <input type="text" class="form-control" value="{{i.emp_name}}">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                        <label for="" class="form-label">Designation</label>
+                        <input type="text" class="form-control" value="{{i.designation}}">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                        <label for="" class="form-label">Salary</label>
+                        <input type="text" class="form-control" value="{{i.salary}}">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                        <label for="" class="form-label">Company name</label>
+                        <input type="text" class="form-control" value="{{i.com_name}}">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                        <label for="" class="form-label">Mobno</label>
+                        <input type="text" class="form-control" value="{{i.mob_no}}">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                        <label for="" class="form-label">Username</label>
+                        <input type="text" class="form-control" value="{{i.username}}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
